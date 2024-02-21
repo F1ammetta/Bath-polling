@@ -152,7 +152,8 @@ class _MyHomePageState extends State<MyHomePage> {
             context: context,
             initialDate: selected_date,
             firstDate: DateTime(2021),
-            lastDate: DateTime(2030),
+            // until july 31 2035
+            lastDate: DateTime.now().add(const Duration(days: 5000)),
             // builder: (context, child) {
             //   return Center(
             //     child: child,
